@@ -22,7 +22,7 @@ func BastilleCreate(name, release, ip, iface string) error {
 	return runBastille(args...)
 }
 
-func BastilleDestroy(name string) error  { return runBastille("destroy", name) }
+func BastilleDestroy(name string) error  { return runBastille("destroy","-y", name) }
 func BastilleStart(name string) error    { return runBastille("start", name) }
 func BastilleStop(name string) error     { return runBastille("stop", name) }
 func BastilleRestart(name string) error  { return runBastille("restart", name) }

@@ -47,7 +47,7 @@ Now you are ready to run requests.  Here are some sample requests:
 ```shell
 Create a jail
 -------------
-curl "http://localhost:8080/jails/create?name=testjail&release=13.2-RELEASE&ip=192.168.0.10&iface=em0"
+curl "http://localhost:8080/jails/create?name=testjail&release=14.2-RELEASE&ip=192.168.0.10&iface=em0"
 
 Start jail
 ------------
