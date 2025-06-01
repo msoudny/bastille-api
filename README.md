@@ -1,5 +1,5 @@
 # bastille-api
-==============
+
 API Interface for Bastille (https://bastillebsd.org/)
 
 
@@ -37,22 +37,28 @@ You should see:
 
 Now you are ready to run requests.  Here are some sample requests:
 
-# Create a jail
+Create a jail
+-------------
 curl "http://localhost:8080/jails/create?name=testjail&release=13.2-RELEASE&ip=192.168.0.10&iface=em0"
 
-# Start jail
+Start jail
+------------
 curl "http://localhost:8080/jails/start?name=testjail"
 
-# Rename jail
+Rename jail
+-----------
 curl "http://localhost:8080/jails/rename?old=testjail&new=myjail"
 
-# Restart jail
+Restart jail
+------------
 curl "http://localhost:8080/jails/restart?name=myjail"
 
-# Stop jail
+Stop jail
+---------
 curl "http://localhost:8080/jails/stop?name=myjail"
 
-# Destroy jail
+Destroy jail
+------------
 curl "http://localhost:8080/jails/destroy?name=myjail"
 
 
