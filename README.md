@@ -9,34 +9,42 @@ Commands
 This API currently does the following commands:
 
 create
+
 destroy
+
 start
+
 stop
+
 restart
+
 rename
+
 upgrade 
 
 Setup
 -----
 
-Fist clone the repo then cd into bastille-api.  Now yo uneed to initialize 
+Fist clone the repo then cd into bastille-api.  Now you uneed to initialize 
 the go module.
 
-
+```shell
 go mod init bastille-api
 got mod tidy
+```
 
 Now run the API on your server:
-
+```sne..
 go run .
+```
 
 You should see:
-
+```shell
 ✅ BastilleBSD API running on http://localhost:8080
-
+```
 
 Now you are ready to run requests.  Here are some sample requests:
-
+```shell
 Create a jail
 -------------
 curl "http://localhost:8080/jails/create?name=testjail&release=13.2-RELEASE&ip=192.168.0.10&iface=em0"
@@ -60,6 +68,6 @@ curl "http://localhost:8080/jails/stop?name=myjail"
 Destroy jail
 ------------
 curl "http://localhost:8080/jails/destroy?name=myjail"
-
+```
 
 
