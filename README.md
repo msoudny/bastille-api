@@ -20,7 +20,6 @@ restart
 
 rename
 
-upgrade 
 
 Setup
 -----
