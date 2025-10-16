@@ -103,10 +103,10 @@ func upgradeHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func listHandler(w http.ResponseWriter, r *http.Request) {
-	err := BastilleList()
+	output, err := BastilleList()
 	if err != nil {
 		http.Error(w, err.Error(), 500)
 		return
 	}
-	fmt.Fprintf(w, "Your jails..")
+	fmt.Fprintf(w, "Your jails:\%s", output)
 }
