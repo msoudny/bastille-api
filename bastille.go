@@ -28,5 +28,5 @@ func BastilleStop(name string) error     { return runBastille("stop", name) }
 func BastilleRestart(name string) error  { return runBastille("restart", name) }
 func BastilleRename(old, new string) error { return runBastille("rename", old, new) }
 func BastilleUpgrade(name string) error  { return runBastille("upgrade", name) }
-func BastilleList(name string) error  { return runBastille("list","all") }
+func BastilleList error  { return runBastille("list","all") }
 
